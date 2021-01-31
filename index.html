@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task-list</title>
+    <!-- bootstrap link -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- custom stylesheet link -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <section class="task-area container-fluid">
+        <h1 class="display-1 fw-bold text-white text-center">ToDo <span class="text-info">List</span></h1>
+        <div class=" m-auto task-input-area">
+            <div class="task-input">
+                <input id="input-a-task" class="form-control" type="text" placeholder="add a task" autofocus>
+            </div>
+            <div class="task-control-btn">
+                <input id="add-task" class="btn btn-success" type="button" value="add">
+            <input id="clear-task" class="btn btn-danger" type="button" value="clear list">
+            </div>
+        </div>
+    </section>
+    <section class="mt-4 col-md-7 m-auto container">
+        <h3>Task for today:</h3>
+        <ul id="task-list"></ul>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
